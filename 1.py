@@ -2,7 +2,6 @@
 with open('1.txt') as f:
     s = f.readline()
     li = [s.strip().split('\t') for s in f]
-    new_li = []
     # Сортировка списка в порядке убывания заработной платы
     li.sort(key=lambda x: [-int(x[0])])
     # Вывод трех первых строчек, данные из которых впоследствии были
